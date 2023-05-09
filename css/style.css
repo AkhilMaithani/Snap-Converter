@@ -1,0 +1,1104 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+
+/* universal selector */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* pesudo class for root element */
+:root {
+  --basicFont: "Roboto", sans-serif;
+  --secondFont: "Indie Flower", cursive;
+}
+
+body {
+  font-family: var(--basicFont);
+  scroll-behavior: smooth;
+}
+
+body.addPicture-body {
+  width: 100%;
+  background-color: lightcyan;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(30, 143, 170, 0.78);
+}
+
+::-webkit-scrollbar-corner {
+  background-color: white;
+}
+
+/* header section starts */
+.header-section {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 235, 102, 0.85) 0%,
+    rgba(30, 143, 170, 0.78) 100%
+  );
+  box-shadow: 0px 0px 50px 0px black;
+  position: sticky;
+  top: 0px;
+  right: 0px;
+}
+
+.header-section h2 {
+  width: 100%;
+  height: 100%;
+  font-size: 1.5rem;
+  font-family: var(--secondFont);
+  font-style: italic;
+  text-shadow: 0px 0px 10px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* header section ends */
+
+/* intro section starts */
+#intro-screen {
+  width: 100%;
+}
+
+.intro-screen-sec {
+  width: 100%;
+  height: 100%;
+}
+
+.intro {
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 235, 102, 0.85) 0%,
+    rgba(30, 143, 170, 0.78) 100%
+  );
+  padding: 0.5rem;
+}
+
+.intro-sec {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-image {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-image img {
+  width: 33.33%;
+}
+
+.intro-text {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-text h1 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3.5rem !important;
+  text-shadow: 0px 0px 20px black;
+  font-family: var(--secondFont);
+  font-style: italic;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.intro-second {
+  width: 100%;
+  height: 300px;
+}
+
+.intro-second-sec {
+  width: 100%;
+  height: 100%;
+}
+
+.intro-second-sec p {
+  width: 100%;
+  height: 50%;
+  font-family: var(--secondFont);
+  font-size: 1.5rem;
+  text-transform: lowercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-second-sec p i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+}
+
+.intro-second-sec .benefits {
+  width: 100%;
+  height: 50%;
+}
+
+.intro-second-sec .benefits ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 1.5rem;
+  list-style-type: none;
+}
+
+.intro-second-sec .benefits ul li {
+  width: 100%;
+  height: 100%;
+  text-transform: capitalize;
+  font-family: var(--secondFont);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+}
+
+.intro-second-sec .benefits ul li i {
+  color: green;
+  font-size: large;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* intro section ends */
+
+/* add image section starts */
+.add-data {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.image-file {
+  width: 200px;
+  height: 200px;
+  margin: 2rem 1rem;
+}
+
+.image-file form,
+.done .inner-style {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.image-file form label,
+.done p {
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: var(--secondFont);
+  text-transform: uppercase;
+  text-shadow: 0px 0px 50px black;
+  box-shadow: 0px 0px 10px 0px black;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: lightseagreen;
+  color: white;
+  border-style: solid;
+  border-width: 2px;
+  border-color: lightseagreen;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.image-file form label i {
+  color: white;
+  font-size: 3rem;
+  margin-top: 1rem;
+}
+
+.image-file form input {
+  display: none;
+}
+
+.done .inner-style {
+  border-style: solid;
+  border-width: 2px;
+  border-color: lightgreen;
+}
+
+.done p {
+  font-size: 2rem;
+  background-color: lightgreen;
+}
+
+.done p i {
+  font-size: 3rem;
+}
+
+.done {
+  display: none;
+}
+
+.convert-PDF {
+  width: 200px;
+  height: 200px;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: blueviolet;
+  color: white;
+  box-shadow: 0px 0px 10px 0px black;
+  border-style: solid;
+  border-width: 2px;
+  border-color: blueviolet;
+  border-radius: 2rem;
+}
+
+.convert-PDF .image-size {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.convert-PDF .image-size label {
+  font-size: 1rem;
+  font-family: var(--secondFont);
+  font-weight: 700;
+  margin: 0.5rem;
+}
+
+.convert-PDF .image-size input {
+  width: 75%;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.convert-PDF .image-size input[type="submit"] {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  background-color: black;
+  color: white;
+  border: none;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition-duration: 0.1s;
+}
+
+.convert-PDF .image-size input[type="submit"]:hover {
+  opacity: 0.9;
+}
+
+.convert-PDF {
+  display: none;
+}
+/* add image section ends */
+
+/* add pdf file section starts */
+.add-data .pdf-file {
+  width: 200px;
+  height: 200px;
+  margin: 2rem 1rem;
+  background-color: white;
+  box-shadow: 0px 0px 8px 0px black;
+}
+
+.pdf-file .pdf-file-data {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.pdf-file-data .trash-button {
+  width: 100%;
+  height: 15%;
+  transition-property: all;
+  transition-duration: 2s;
+  transition-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  background-color: rgb(240, 128, 128, 0.2);
+  display: none;
+}
+
+.trash-button i {
+  font-size: 1rem;
+  font-weight: 700;
+  color: red;
+}
+
+.pdf-file-data:hover .trash-button {
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pdf-file-data .image-section {
+  width: 100%;
+  height: 85%;
+}
+
+.pdf-file-data:hover .image-section {
+  width: 100%;
+  height: 70%;
+}
+
+.pdf-file-data .image-section img {
+  width: 100%;
+  height: 100%;
+}
+
+.pdf-file-data .image-name {
+  width: 100%;
+  height: 15%;
+  font-size: 0.5rem;
+  font-weight: 700;
+  background-color: lightgreen;
+  word-wrap: normal;
+  word-break: keep-all;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* pdf file section ends */
+
+/* main activity section starts */
+#main-activity {
+  width: 100%;
+  height: 400px;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 235, 102, 0.85) 0%,
+    rgba(30, 143, 170, 0.78) 100%
+  );
+}
+
+.main-activity-sec {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.main-activity-sec .inner {
+  width: 94%;
+  height: 94%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: lightcyan;
+  box-shadow: 0px 0px 20px 0px black;
+  border-style: dashed;
+  border-width: 2px;
+  border-color: black;
+  border-radius: 1rem;
+}
+
+.main-activity-sec .inner p {
+  width: 100%;
+  height: 50%;
+  font-size: 3rem !important;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--secondFont);
+  text-transform: capitalize;
+  text-shadow: 0px 0px 3px black;
+  padding: 1rem;
+  margin-bottom: 3rem;
+}
+
+.main-activity-sec .inner .file {
+  width: 40%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner .file a {
+  min-width: 80%;
+  border-style: dashed;
+  border-width: 3px;
+  border-color: darkblue;
+  border-radius: 3rem;
+  color: white;
+  background-color: darkblue;
+  font-size: 1.5rem !important;
+  font-family: cursive;
+  text-decoration: none;
+  text-transform: capitalize;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition-duration: 0.1s;
+  box-shadow: 0px 0px 10px 0px darkblue;
+}
+
+.inner .file a:hover {
+  background-color: white;
+  color: darkblue;
+}
+/* main activity section ends */
+
+/* convert details section starts */
+#convert-details {
+  width: 100%;
+}
+
+#convert-details .convert-inner {
+  width: 100%;
+}
+
+.convert-inner h2 {
+  width: 100%;
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: var(--secondFont);
+  padding: 1rem;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.convert-inner h2 i {
+  color: darkblue;
+}
+
+.convert-inner .convert {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.convert img {
+  width: 50%;
+  padding: 1rem;
+}
+
+.convert ol {
+  width: 45%;
+  list-style-type: none;
+  list-style-position: inside;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.convert ol li {
+  width: 100%;
+  height: 100%;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  padding: 1rem;
+}
+
+.convert ol li span {
+  color: darkblue;
+  font-weight: 700;
+  text-shadow: 0px 0px 10px darkblue;
+}
+/* convert details section ends */
+
+/* footer section starts */
+#footer-section {
+  width: 100%;
+  height: 190px;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 235, 102, 0.85) 0%,
+    rgba(30, 143, 170, 0.78) 100%
+  );
+}
+
+#footer-section .footer-details {
+  width: 100%;
+  height: 100%;
+}
+
+.footer-details .links {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style-type: none;
+}
+
+.links li {
+  font-size: 1.5rem;
+}
+
+li a {
+  opacity: 1;
+}
+
+li.twitter a {
+  color: darkblue;
+}
+
+li.instagram a {
+  color: orangered;
+}
+
+li.gmail a {
+  color: crimson;
+}
+
+li.linkedin a {
+  color: navy;
+}
+
+li a:hover {
+  opacity: 0.7;
+}
+
+.footer-details p {
+  width: 100%;
+  height: 25%;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-details p i {
+  color: crimson;
+}
+/* footer section ends */
+
+/* responsive code starts */
+/* pdf pages */
+@media screen and (max-width: 350px) and (min-width: 0px) {
+  .intro-text {
+    padding: 1rem;
+  }
+
+  .image-file {
+    margin: 0.5rem;
+  }
+
+  .convert-PDF {
+    margin: 0.5rem;
+  }
+
+  .convert-PDF .image-size input[type="submit"] {
+    font-size: 0.7rem;
+  }
+
+  .add-data .pdf-file {
+    margin: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 399px) and (min-width: 0px) {
+  .header-section h2 {
+    font-size: 0.8rem;
+  }
+
+  .intro-sec {
+    flex-direction: column;
+  }
+
+  .intro-image {
+    width: 100%;
+    height: 70%;
+  }
+
+  .intro-image img {
+    width: 33.33%;
+    height: 80%;
+  }
+
+  .intro-text {
+    width: 100%;
+    height: 30%;
+    padding: 1rem;
+  }
+
+  .intro-text h1 {
+    width: 100%;
+    height: 100%;
+    font-size: 1rem !important;
+  }
+
+  .intro-second-sec p {
+    height: 30%;
+    font-size: 0.7rem;
+    text-align: center;
+  }
+
+  .intro-second-sec p i {
+    display: none;
+  }
+
+  .intro-second-sec .benefits {
+    height: 70%;
+  }
+
+  .intro-second-sec .benefits ul {
+    font-size: 0.7rem;
+    flex-direction: column;
+  }
+
+  .main-activity-sec .inner p {
+    font-size: 1rem !important;
+    text-align: center;
+  }
+
+  .main-activity-sec .inner .file {
+    width: 100%;
+    height: 50%;
+    padding: 0.2rem !important;
+  }
+
+  .inner .file a {
+    font-size: 0.7rem !important;
+  }
+
+  .convert-inner h2 {
+    font-size: 0.9rem !important;
+  }
+
+  .convert img {
+    display: none;
+  }
+
+  .convert ol {
+    width: 100%;
+    height: 100%;
+  }
+
+  .convert ol li {
+    font-size: 0.8rem !important;
+  }
+
+  .links li {
+    font-size: 0.7rem !important;
+  }
+
+  .footer-details p {
+    font-size: 0.5rem !important;
+  }
+}
+
+@media screen and (max-width: 451px) and (min-width: 400px) {
+  .header-section h2 {
+    font-size: 1rem;
+  }
+
+  .intro-sec {
+    flex-direction: column;
+  }
+
+  .intro-image {
+    width: 100%;
+    height: 75%;
+  }
+
+  .intro-image img {
+    width: 33.33%;
+    height: 100%;
+  }
+
+  .intro-text {
+    padding: 1rem;
+  }
+
+  .intro-text h1 {
+    width: 100%;
+    height: 100%;
+    font-size: 1.5rem !important;
+  }
+
+  .intro-second-sec p {
+    font-size: 0.8rem;
+  }
+
+  .intro-second-sec .benefits ul {
+    font-size: 0.6rem;
+  }
+
+  .main-activity-sec .inner p {
+    font-size: 1.3rem !important;
+  }
+
+  .main-activity-sec .inner .file {
+    width: 90%;
+    height: 50%;
+    padding: 0.2rem !important;
+  }
+
+  .inner .file a {
+    font-size: 0.9rem !important;
+  }
+
+  .convert-inner h2 {
+    font-size: 1rem !important;
+  }
+
+  .convert ol li {
+    font-size: 0.7rem !important;
+  }
+
+  .links li {
+    font-size: 0.9rem !important;
+  }
+
+  .footer-details p {
+    font-size: 0.7rem !important;
+  }
+}
+
+@media screen and (max-width: 500px) and (min-width: 450px) {
+  .header-section h2 {
+    font-size: 1rem;
+  }
+
+  .intro-sec {
+    flex-direction: column;
+  }
+
+  .intro-image {
+    width: 100%;
+    height: 75%;
+  }
+
+  .intro-image img {
+    width: 33.33%;
+    height: 100%;
+  }
+
+  .intro-text {
+    width: 100%;
+    height: 25%;
+    padding: 1rem;
+  }
+
+  .intro-text h1 {
+    width: 100%;
+    height: 100%;
+    font-size: 1.5rem !important;
+  }
+
+  .intro-second-sec p {
+    font-size: 0.8rem;
+  }
+
+  .intro-second-sec .benefits ul {
+    font-size: 0.7rem;
+  }
+
+  .main-activity-sec .inner p {
+    font-size: 1.5rem !important;
+  }
+
+  .main-activity-sec .inner .file {
+    width: 90%;
+    height: 50%;
+    padding: 0.2rem !important;
+  }
+
+  .inner .file a {
+    font-size: 0.9rem !important;
+  }
+
+  .convert-inner h2 {
+    font-size: 1rem !important;
+  }
+
+  .convert ol li {
+    font-size: 0.7rem !important;
+  }
+
+  .links li {
+    font-size: 0.9rem !important;
+  }
+
+  .footer-details p {
+    font-size: 0.7rem !important;
+  }
+}
+
+@media screen and (max-width: 700px) and (min-width: 501px) {
+  .header-section h2 {
+    font-size: 1rem;
+  }
+
+  .intro-sec {
+    flex-direction: column;
+  }
+
+  .intro-image {
+    width: 100%;
+    height: 75%;
+  }
+
+  .intro-image img {
+    width: 33.33%;
+    height: 100%;
+  }
+
+  .intro-text {
+    width: 100%;
+    height: 25%;
+    padding: 1.5rem;
+  }
+
+  .intro-text h1 {
+    width: 100%;
+    height: 100%;
+    font-size: 1.8rem !important;
+  }
+
+  .intro-second-sec p {
+    font-size: 1rem;
+  }
+
+  .intro-second-sec .benefits ul {
+    font-size: 0.8rem;
+  }
+
+  .main-activity-sec .inner p {
+    font-size: 1.8rem !important;
+  }
+
+  .main-activity-sec .inner .file {
+    width: 80%;
+    height: 50%;
+    padding: 0.1rem !important;
+  }
+
+  .inner .file a {
+    font-size: 0.9rem !important;
+  }
+
+  .convert-inner h2 {
+    font-size: 1.3rem !important;
+  }
+
+  .convert ol li {
+    font-size: 0.7rem !important;
+  }
+
+  .links li {
+    font-size: 1rem !important;
+  }
+
+  .footer-details p {
+    font-size: 0.7rem !important;
+  }
+}
+
+@media screen and (max-width: 800px) and (min-width: 701px) {
+  .header-section h2 {
+    font-size: 1.1rem;
+  }
+
+  .intro-text h1 {
+    font-size: 2rem !important;
+  }
+
+  .intro-second-sec p {
+    font-size: 0.9rem;
+  }
+
+  .intro-second-sec .benefits ul {
+    font-size: 0.9rem;
+  }
+
+  .main-activity-sec .inner p {
+    font-size: 1.8rem !important;
+  }
+
+  .main-activity-sec .inner .file {
+    width: 75%;
+    height: 50%;
+    padding: 0.1rem !important;
+  }
+
+  .inner .file a {
+    font-size: 0.9rem !important;
+  }
+
+  .convert ol li {
+    font-size: 0.7rem !important;
+  }
+
+  .links li {
+    font-size: 1rem !important;
+  }
+
+  .footer-details p {
+    font-size: 0.7rem !important;
+  }
+}
+
+@media screen and (max-width: 900px) and (min-width: 801px) {
+  .intro-text h1 {
+    font-size: 2rem !important;
+  }
+
+  .intro-second-sec p {
+    font-size: 1rem;
+  }
+
+  .intro-second-sec .benefits ul {
+    font-size: 1rem;
+  }
+
+  .main-activity-sec .inner p {
+    font-size: 2rem !important;
+  }
+
+  .main-activity-sec .inner .file {
+    width: 75%;
+    height: 50%;
+    padding: 0.3rem !important;
+  }
+
+  .inner .file a {
+    font-size: 0.9rem !important;
+  }
+
+  .convert ol li {
+    font-size: 1rem !important;
+  }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 901px) {
+  .intro-text h1 {
+    font-size: 2.3rem !important;
+  }
+
+  .intro-second-sec p {
+    font-size: 1.2rem;
+  }
+
+  .intro-second-sec .benefits ul {
+    font-size: 1.2rem;
+  }
+
+  .main-activity-sec .inner p {
+    font-size: 2.3rem !important;
+  }
+
+  .main-activity-sec .inner .file {
+    width: 75%;
+    height: 50%;
+    padding: 0.3rem !important;
+  }
+
+  .inner .file a {
+    font-size: 1.1rem !important;
+  }
+
+  .convert ol li {
+    font-size: 1rem !important;
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 1001px) {
+  .intro-text h1 {
+    font-size: 2.5rem !important;
+  }
+
+  .intro-second-sec p {
+    font-size: 1.2rem;
+  }
+
+  .intro-second-sec .benefits ul {
+    font-size: 1.2rem;
+  }
+
+  .main-activity-sec .inner p {
+    font-size: 2.5rem !important;
+  }
+
+  .main-activity-sec .inner .file {
+    width: 75%;
+    height: 50%;
+    padding: 0.5rem !important;
+  }
+
+  .inner .file a {
+    font-size: 1.5rem !important;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .intro-text h1 {
+    font-size: 6rem;
+  }
+
+  .main-activity-sec .inner p {
+    font-size: 6rem;
+  }
+
+  .main-activity-sec .inner .file {
+    width: 75%;
+    height: 50%;
+  }
+
+  .inner .file a {
+    font-size: 2.5rem;
+  }
+}
+/* responsive code ends */

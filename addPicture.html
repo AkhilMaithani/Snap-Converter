@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Image to Pdf Converter</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <link rel="icon" type="image/x-icon" href="./Images/converterIcon.png" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <script src="./js/script.js" defer></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.1/jspdf.debug.js"
+      defer
+    ></script>
+  </head>
+  <body class="addPicture-body">
+    <!-- header section starts -->
+    <header class="header-section">
+      <h2>Snap Converter Application</h2>
+    </header>
+    <!-- add images section starts -->
+    <section class="add-data">
+      <!-- add pdf part -->
+      <!-- <section class="pdf-file">
+            <div class="pdf-file-data">
+              <p class="trash-button"><i class="fa-solid fa-trash-can"></i></p>
+            
+              <div class="image-section">
+                  <img src="" alt="image">
+              </div>
+  
+              <p class="image-name">Image Name</p>
+            </div>
+        </section> -->
+      <!-- select image part -->
+      <div class="image-file">
+        <form class="inner-style">
+          <label for="imageData"
+            >Add Images&nbsp;<i class="fa-solid fa-plus"></i
+          ></label>
+          <input
+            id="imageData"
+            type="file"
+            onchange="addImagesToPDF(this)"
+            multiple
+            accept="image/*"
+          />
+        </form>
+      </div>
+      <div class="done image-file">
+        <p class="inner-style" onclick="displayConvert()">
+          Done&nbsp;<i class="fa-solid fa-check"></i>
+        </p>
+      </div>
+      <!-- convert button -->
+      <div class="convert-PDF">
+        <form class="image-size">
+          <label for="image-width">Image Width (optional)</label>
+          <input type="text" id="image-width" placeholder="max value:200px" />
+          <label for="image-height">Image Height (optional)</label>
+          <input type="text" id="image-height" placeholder="max value:287px" />
+          <input
+            type="submit"
+            value="Convert & Download"
+            onclick="downloadPDF()"
+          />
+        </form>
+      </div>
+    </section>
+    <!-- footer section starts -->
+    <footer id="footer-section">
+      <div class="footer-details">
+        <ul class="links">
+          <li class="twitter">
+            <a href="https://twitter.com/maithani_akhil" target="_blank"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+          </li>
+          <li class="instagram">
+            <a
+              href="https://www.instagram.com/abyte._.space._.needed/"
+              target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </li>
+          <li class="gmail">
+            <a href="mailto:recruitakhilmaithani2023@gmail.com" target="_blank"
+              ><i class="fa-solid fa-envelope"></i
+            ></a>
+          </li>
+          <li class="linkedin">
+            <a href="https://www.linkedin.com/in/akhilmaithani/" target="_blank"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </li>
+        </ul>
+        <p>&copy; 2022 - Made by Akhil Maithani</p>
+        <p>
+          Made with&nbsp;<i class="fa-sharp fa-solid fa-heart"></i>&nbsp;for the
+          people of the internet.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
