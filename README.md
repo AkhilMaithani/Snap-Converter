@@ -20,4 +20,4 @@ Our image-to-PDF converter project offers a simple and efficient solution for co
 ---
 
 - Note: The project is live. Click below to view!<br /><br />
-  <a href="#" target="_blank"><img src="https://img.shields.io/badge/open%20now-Project%20Live%20Link-blue"></a>
+  <a href="https://akhilmaithani.github.io/Snap-Converter/" target="_blank"><img src="https://img.shields.io/badge/open%20now-Project%20Live%20Link-blue"></a>
